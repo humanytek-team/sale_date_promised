@@ -1,0 +1,37 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* sale_date_promised
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 10.0+e-20170815\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-09-29 21:10+0000\n"
+"PO-Revision-Date: 2017-09-29 21:10+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: sale_date_promised
+#: model:ir.ui.view,arch_db:sale_date_promised.report_sale_order_document_date
+msgid "<span>State </span>"
+msgstr "<span>Estatus </span>"
+
+#. module: sale_date_promised
+#: model:ir.ui.view,arch_db:sale_date_promised.report_sale_order_document_date
+msgid "<strong>Date Promised:</strong>"
+msgstr "<strong>Fecha Promesa de Entrega:</strong>"
+
+#. module: sale_date_promised
+#: model:ir.model.fields,field_description:sale_date_promised.field_sale_order_date_promised
+msgid "Date Promised"
+msgstr "Fecha Promesa de Entrega"
+
+#. module: sale_date_promised
+#: model:ir.model,name:sale_date_promised.model_sale_order
+msgid "Sales Order"
+msgstr "Pedido de venta"
+
