@@ -3,14 +3,14 @@
 
     <template id="report_sale_order_document_date" inherit_id="sale.report_saleorder_document">
 
-        <xpath expr="//span[@t-field='doc.name']" position="after">
+        <!--<xpath expr="//span[@t-field='doc.name']" position="after">
             <tr style="background-color:lightgray;">
                 <p>
                     <span >State </span>
                     <span t-field="doc.state"/>
                 </p>
             </tr>
-        </xpath>
+        </xpath>-->
 
         <xpath expr="//p[@t-field='doc.date_order']" position="after">
             <tr style="background-color:lightgray;">
