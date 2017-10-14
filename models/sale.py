@@ -21,6 +21,8 @@
 ###############################################################################
 
 from odoo import api, fields, models
+from datetime import datetime
+from odoo.tools import DEFAULT_SERVER_DATETIME_FORMAT
 import logging
 _logger = logging.getLogger(__name__)
 
@@ -37,3 +39,16 @@ class SaleOrder(models.Model):
 
     date_promised = fields.Datetime('Date Promised',
                                     required=False)
+
+
+class SaleOrderLine(models.Model):
+    _name = "sale.order.line"
+    _inherit = 'sale.order.line'
+
+    @api.multi
+    def _prepare_order_line_procurement(self, group_id):
+        vals = super(SaleOrderLine, self)._prepare_order_line_procurement(group_id=group_id)
+        vals.update({
+            'date_planned': self.order_id.date_promised,
+        })
+        return vals
