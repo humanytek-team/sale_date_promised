@@ -30,7 +30,7 @@
     'website': "http://www.humanytek.com",
     'category': 'Sale',
     'version': '1.0.0',
-    'depends': ['sale', 'mrp'],
+    'depends': ['sale', 'sale_order_dates', 'mrp'],
     'data': [
             'view/sale_view.xml',
             'report/sale_report_template.xml'
